@@ -67,7 +67,7 @@ Accurate and early detection of gastrointestinal (GI) lesions is critical for im
    - Treats image patches as tokens and applies attention mechanisms to global dependencies.
    - Outperforms CNNs in fine-grained classification after dataset-specific fine-tuning.
 
-## workflow Diagram
+## Workflow Diagram
 ![Workflow](work_flow.png)
 
 ---
