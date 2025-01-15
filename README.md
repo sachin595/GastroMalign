@@ -1,7 +1,14 @@
 # GastroMalign
-GastroMalign: Early Detection and Prognostic Modeling for High-Risk GI Lesions
+GastroMalign: Early Detection and Prognostic Modeling for High-Risk GastroIntestinal Lesions
 
+![Research Medical AI](https://img.shields.io/badge/Research-Medical%20AI-green.svg)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![Dataset: GastroVision](https://img.shields.io/badge/Dataset-GastroVision-blue.svg)](https://osf.io/84e7f/)
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)
+![PyTorch](https://img.shields.io/badge/Framework-PyTorch-red.svg)
+![TensorFlow](https://img.shields.io/badge/Framework-TensorFlow-orange.svg)
+![Vision Transformer](https://img.shields.io/badge/Model-ViT-green.svg)
+![Contributions](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)
 
 ---
 
