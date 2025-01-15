@@ -49,8 +49,11 @@ Accurate and early detection of gastrointestinal (GI) lesions is critical for im
 - **Annotation:** Verified and annotated by experienced GI endoscopists.
 - **Dataset Link:** [GastroVision Dataset](https://osf.io/84e7f/)
 
-### Dataset Breakdown
-![Dataset Representation](dataset_split.png)
+### Dataset Representation
+![Dataset Representation](dataset_representation.png)
+
+### Visual Representation of Class Distribution
+![Visual Representation of Class Distribution](class_distribution.png)
 
 ---
 
