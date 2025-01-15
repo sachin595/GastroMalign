@@ -10,12 +10,13 @@ GastroMalign: Early Detection and Prognostic Modeling for High-Risk GI Lesions
 2. [Key Objectives](#key-objectives)
 3. [Dataset](#dataset)
 4. [Methodology and Architecture](#methodology-and-architecture)
-5. [Classification and Follow-Up Recommendations](#classification-and-follow-up-recommendations)
-6. [Results and Model Performance](#results-and-model-performance)
-7. [Innovative Features](#innovative-features)
-8. [Clinical Implications](#clinical-implications)
-9. [Impact and Future Vision](#impact-and-future-vision)
-10. [License](#license)
+5. [Work Flow](#workflow-diagram)
+6. [Classification and Follow-Up Recommendations](#classification-and-follow-up-recommendations)
+7. [Results and Model Performance](#results-and-model-performance)
+8. [Innovative Features](#innovative-features)
+9. [Clinical Implications](#clinical-implications)
+10. [Impact and Future Vision](#impact-and-future-vision)
+11. [License](#license)
 
 ---
 
@@ -63,16 +64,16 @@ Accurate and early detection of gastrointestinal (GI) lesions is critical for im
    - **Attention Mechanism:** Focuses on details like cellular irregularities or vascular patterns.
 
 ### 2. **Vision Transformer (ViT)**
-   - Treats image patches as tokens and applies attention mechanisms.
+   - Treats image patches as tokens and applies attention mechanisms to global dependencies.
    - Outperforms CNNs in fine-grained classification after dataset-specific fine-tuning.
 
-### Workflow Diagram
+## workflow Diagram
 ![Workflow](work_flow.png)
 
 ---
 
 ## **Classification and Follow-Up Recommendations**
-GastroMalign classifies GI lesions into four categories with corresponding follow-up timelines and intervention needs:
+This study introduces an innovative framework for the classification of gastrointestinal (GI) lesions into four categories: Benign, Low-Risk, High-Risk, and Malignant.
 
 | **Category** | **Follow-Up Interval** | **Intervention Needed** | **Notes**                            |
 |--------------|-------------------------|--------------------------|---------------------------------------|
@@ -89,14 +90,14 @@ GastroMalign classifies GI lesions into four categories with corresponding follo
 ## **Results and Model Performance**
 
 ### Classification Accuracy (By Model):
-| **Model**                | **Test Accuracy** | **Test Loss** |
-|--------------------------|-------------------|---------------|
-| Pretrained ResNet-50     | 32.42%           | -             |
-| Pretrained DenseNet-121  | 36.77%           | -             |
-| CNN                      | 56%              | -             |
-| ConvNeXt                 | 34.41%           | 2.2436        |
-| Swin Transformer         | 60.56%           | -             |
-| **Vision Transformer (ViT)** | **80.06%**     | -             |
+| **Model**                | **Test Accuracy** | 
+|--------------------------|-------------------|
+| Pretrained ResNet-50     | 32.42%           | 
+| Pretrained DenseNet-121  | 36.77%           | 
+| CNN                      | 56%              | 
+| ConvNeXt                 | 34.41%           |
+| Swin Transformer         | 60.56%           | 
+| **Vision Transformer (ViT)** | **80.06%**     | 
 
 ### ViT Model Metrics:
 - **Test Accuracy:** 80.06%
@@ -111,10 +112,14 @@ GastroMalign classifies GI lesions into four categories with corresponding follo
 ## **Innovative Features**
 1. **Lesion Classification and Malignancy Potential Scoring**:
    - Classifies lesions and assigns malignancy scores based on clinical features.
+   - Assigns a proprietary malignancy potential score based on lesion features (e.g., size, vascularization).
 2. **Predictive Time-to-Progression Estimation**:
-   - Predicts lesion progression timelines to support follow-ups.
+   - Estimates time-to-progression for high-risk lesions using historical data, aiding timely follow-ups.
+   - Highlights rapid progression probabilities for urgent cases.
+
 3. **Visual Risk Mapping**:
-   - Heatmaps generated using Score-CAM to highlight high-risk regions.
+   - **Heatmaps:** Score-CAM generates overlays to highlight high-risk regions on endoscopic images.
+- **Tracking:** Monitors changes over time in lesion size, borders, or vascularity.
 
 ---
 
@@ -140,4 +145,4 @@ GastroMalign classifies GI lesions into four categories with corresponding follo
 
 ## **License**
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)  
-This work is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+This dataset in this project is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
