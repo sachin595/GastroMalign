@@ -73,7 +73,7 @@ Accurate and early detection of gastrointestinal (GI) lesions is critical for im
 ### 2. **Vision Transformer (ViT)**
    - Treats image patches as tokens and applies attention mechanisms to global dependencies.
    - Outperforms CNNs in fine-grained classification after dataset-specific fine-tuning.
-
+---
 ## Workflow Diagram
 ![Workflow](work_flow.png)
 
